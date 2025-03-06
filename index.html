@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿易的二次元空间</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">阿易的二次元空间</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> 关于我</a></li>
+                    <li><a href="#works"><i class="fas fa-code"></i> 作品集</a></li>
+                    <li><a href="#gallery"><i class="fas fa-images"></i> 图库</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> 联系我</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="搜索...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <!-- 主页部分 -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="avatar-container">
+                        <img src="images/avatar.png" alt="阿易头像" class="avatar">
+                        <div class="avatar-decoration"></div>
+                    </div>
+                    <h1 class="glitch" data-text="欢迎来到阿易的二次元空间">欢迎来到阿易的二次元空间</h1>
+                    <p class="subtitle">coding • 动漫 • 游戏 • 创作</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <i class="fas fa-heart"></i>
+                            <span>2233</span>
+                            <p>获赞</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-eye"></i>
+                            <span>9999+</span>
+                            <p>浏览</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-star"></i>
+                            <span>666</span>
+                            <p>收藏</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a href="#about" class="btn primary">了解更多</a>
+                        <a href="#contact" class="btn secondary">联系我</a>
+                    </div>
+                </div>
+                <div class="decoration">
+                    <div class="floating-element elem1"></div>
+                    <div class="floating-element elem2"></div>
+                    <div class="floating-element elem3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我部分 -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2>关于我</h2>
+                <div class="section-decoration"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about.png" alt="关于我">
+                    <div class="image-decoration"></div>
+                </div>
+                <div class="about-text">
+                    <div class="card">
+                        <h3>我是谁？</h3>
+                        <p>大家好，我是阿易！热爱编程、动漫和游戏的创作者。喜欢探索新技术，同时也是一个二次元爱好者。</p>
+                    </div>
+                    <div class="card">
+                        <h3>技能树</h3>
+                        <div class="skills">
+                            <div class="skill-item">
+                                <span>前端开发</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>后端开发</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>UI设计</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>游戏开发</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>兴趣爱好</h3>
+                        <div class="interests">
+                            <span class="interest-tag">编程</span>
+                            <span class="interest-tag">动漫</span>
+                            <span class="interest-tag">游戏</span>
+                            <span class="interest-tag">绘画</span>
+                            <span class="interest-tag">音乐</span>
+                            <span class="interest-tag">旅行</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品集部分 -->
+        <section id="works" class="section">
+            <div class="section-header">
+                <h2>作品集</h2>
+                <div class="section-decoration"></div>
+            </div>
+            <div class="works-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">网站</button>
+                <button class="filter-btn" data-filter="app">应用</button>
+                <button class="filter-btn" data-filter="game">游戏</button>
+                <button class="filter-btn" data-filter="design">设计</button>
+            </div>
+            <div class="works-grid">
+                <div class="work-item" data-category="web">
+                    <div class="work-image">
+                        <img src="images/work1.png" alt="作品1">
+                        <div class="work-overlay">
+                            <div class="work-info">
+                                <h3>动漫风格个人网站</h3>
+                                <p>HTML, CSS, JavaScript</p>
+                                <a href="#" class="btn small">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="app">
+                    <div class="work-image">
+                        <img src="images/work2.png" alt="作品2">
+                        <div class="work-overlay">
+                            <div class="work-info">
+                                <h3>二次元壁纸APP</h3>
+                                <p>React Native, Firebase</p>
+                                <a href="#" class="btn small">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="game">
+                    <div class="work-image">
+                        <img src="images/work3.png" alt="作品3">
+                        <div class="work-overlay">
+                            <div class="work-info">
+                                <h3>像素风格冒险游戏</h3>
+                                <p>Unity, C#</p>
+                                <a href="#" class="btn small">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="design">
+                    <div class="work-image">
+                        <img src="images/work4.png" alt="作品4">
+                        <div class="work-overlay">
+                            <div class="work-info">
+                                <h3>动漫角色设计</h3>
+                                <p>Photoshop, Illustrator</p>
+                                <a href="#" class="btn small">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 图库部分 -->
+        <section id="gallery" class="section">
+            <div class="section-header">
+                <h2>图库</h2>
+                <div class="section-decoration"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery1.png" alt="图片1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.png" alt="图片2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.png" alt="图片3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery4.png" alt="图片4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery5.png" alt="图片5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery6.png" alt="图片6">
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系我部分 -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2>联系我</h2>
+                <div class="section-decoration"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>邮箱</h3>
+                        <p>ayi@example.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-weixin"></i>
+                        <h3>微信</h3>
+                        <p>ayi_wechat</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-qq"></i>
+                        <h3>QQ</h3>
+                        <p>123456789</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-bilibili"></i>
+                        <h3>哔哩哔哩</h3>
+                        <p>阿易的二次元空间</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-header">
+                        <h3>给我留言</h3>
+                        <p>有任何问题或合作意向，请随时联系我~</p>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="你的名字" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="你的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="主题">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="你的留言..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">发送留言</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Logo" class="footer-logo-img">
+                    <span>阿易的二次元空间</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">首页</a>
+                    <a href="#about">关于我</a>
+                    <a href="#works">作品集</a>
+                    <a href="#gallery">图库</a>
+                    <a href="#contact">联系我</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-qq"></i></a>
+                    <a href="#"><i class="fab fa-bilibili"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 阿易的二次元空间. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
